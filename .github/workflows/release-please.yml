@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-
         if: ${{ steps.release.outputs.release_created }}
 
-      - uses: pnpm/action-setup@v2.0.1
+      - uses: pnpm/action-setup@v4
         with:
           version: 6.23.2
           run_install: true
@@ -96,7 +96,7 @@ jobs:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
 
-      - uses: pnpm/action-setup@v2.0.1
+      - uses: pnpm/action-setup@v4
         with:
           version: 6.23.2
           run_install: true
